@@ -27,11 +27,11 @@ const Modal = ({
   };
 
   const maxWidthClass = {
-    sm: "sm:max-w-sm",
-    md: "sm:max-w-md",
-    lg: "sm:max-w-lg",
-    xl: "sm:max-w-xl",
-    "2xl": "sm:max-w-2xl",
+    sm: "md:max-w-sm",
+    md: "md:max-w-md",
+    lg: "md:max-w-lg",
+    xl: "md:max-w-xl",
+    "2xl": "md:max-w-2xl",
   }[maxWidth];
 
   //   fixed inset-0 flex overflow-y-auto px-4 py-6 sm:px-0 items-center z-50 transform transition-all
@@ -47,7 +47,7 @@ const Modal = ({
             className="fixed bg-gray-800 opacity-30 inset-0 transition-all overflow-y-auto px-4 py-6 sm:px-0 z-40 w-full h-full"
           />
           <div
-            className={`fixed inset-0 flex overflow-y-auto px-4 py-6 sm:px-5 items-center z-50 transform transition-all bg-quaternary rounded-xl ${maxWidthClass} ${classAditional}`}
+            className={`fixed w-[90%]  animate-duration-500 animate-fade animate-ease-in inset-0 flex overflow-y-auto px-4 py-6 sm:px-5 items-center z-50 transform transition-all bg-quaternary rounded-xl ${maxWidthClass} ${classAditional}`}
           >
             {children}
           </div>

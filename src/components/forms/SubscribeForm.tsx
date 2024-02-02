@@ -12,7 +12,7 @@ const SubscribeForm = () => {
       <TextField
         label=""
         placeholder="Escribe tu correo elétronico"
-        classAditional="pl-8 "
+        classAditional="pl-9"
         type="text"
         id="email"
       />
@@ -23,7 +23,7 @@ const SubscribeForm = () => {
       >
         Subscribirse
       </CustomButton>
-      <MdOutlineMail className="absolute top-1/3 left-2 text-xl opacity-80 text-gray-500" />
+      <MdOutlineMail className="absolute top-1/2 -translate-y-1/2 left-2 text-2xl opacity-80 text-gray-500" />
     </form>
   );
 };

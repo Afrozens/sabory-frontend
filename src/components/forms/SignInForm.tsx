@@ -34,13 +34,13 @@ const SignInForm = () => {
         </div>
       </div>
       <TextField
-        label=""
+        label="Correo elétronico"
         placeholder="example@sabory.es"
         type="text"
         id="email"
       />
       <TextField
-        label=""
+        label="Contraseña"
         placeholder="••••••••"
         type="password"
         id="password"

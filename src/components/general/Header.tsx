@@ -52,7 +52,7 @@ const Header = () => {
         onClose={handleClose}
         isLoading={false}
         maxWidth="sm"
-        classAditional="h-max top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        classAditional="h-max top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:top-1/3"
       >
         <SignInForm />
       </Modal>

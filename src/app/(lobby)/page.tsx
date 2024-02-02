@@ -37,7 +37,7 @@ function Home() {
           className="absolute top-1/3 -right-5 z-0 lg:top-20"
         />
         {/* main title of landing */}
-        <div className="flex flex-col md:max-w-xl mb-4 lg:mb-0">
+        <div className="animate-fade animate-ease-out flex flex-col md:max-w-xl mb-4 lg:mb-0">
           <h1 className="mb-4 text-5xl font-extrabold leading-foose tracking-tight text-gray-900 lg:text-7xl ">
             Compra directa de{" "}
             <b className="text-primary opacity-90">alimentos</b> con descuentos
@@ -49,7 +49,7 @@ function Home() {
           <SubscribeForm />
         </div>
         {/* main image of landing */}
-        <div className="w-80 mx-auto h-80 flex justify-center items-center bg-primary rounded-full z-10 relative lg:w-96 lg:h-96 md:mx-0">
+        <div className="animate-fade animate-ease-out w-80 mx-auto h-80 flex justify-center items-center bg-primary rounded-full z-10 relative lg:w-96 lg:h-96 md:mx-0">
           <Image
             width={150}
             height={50}
@@ -75,16 +75,24 @@ function Home() {
       </section>
       {/* section of what we do */}
       <section className="w-full flex flex-col mb-4 px-5">
-        <h3 className="text-xl text-center text-tertiary">¿La razón?</h3>
-        <h4 className="text-2xl font-semibold text-center text-gray-900">
+        <h3 className=" animate-fade animate-ease-out text-xl text-center text-tertiary">
+          ¿La razón?
+        </h3>
+        <h4 className="animate-fade animate-ease-out text-2xl font-semibold text-center text-gray-900">
           Ayudamos a miles de personas a reducir el desperdicio de alimentos.
         </h4>
         <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-0 px-5 mt-4 items-center justify-between lg:px-20">
           {listWhat.map((what, index) => (
             <div
               key={index}
-              className={`p-4 w-64 flex flex-col justify-center items-center rounded-md bg-[#7eb6858a] ${
+              className={`p-4 w-64 flex flex-col animate-ease-linear justify-center items-center rounded-md bg-[#7eb6858a] ${
                 index === 1 ? "lg:pt-12 lg:px-8" : ""
+              } ${
+                index === 0
+                  ? "animate-fade-left"
+                  : index === 1
+                  ? "animate-fade-up"
+                  : "animate-fade-right"
               }`}
             >
               <Image
