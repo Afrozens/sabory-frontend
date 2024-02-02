@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rubik } from "next/font/google";
 // config
 import { siteConfig } from "@/config/side";
 // styles
 import "@/styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL as string),
@@ -54,10 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={rubik.className}>{children}</body>
     </html>
   );
-}
-function absoluteUrl(arg0: string): string | URL | null | undefined {
-  throw new Error("Function not implemented.");
 }

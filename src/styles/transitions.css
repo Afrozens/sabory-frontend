@@ -1,0 +1,3 @@
+.btn-main-translate:hover > .btn-translate {
+  transform: translateX(0.5rem);
+}

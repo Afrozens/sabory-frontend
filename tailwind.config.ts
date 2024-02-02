@@ -14,6 +14,9 @@ const config: Config = {
         tertiary: "#EDB135",
         quaternary: "#eff6f0",
       },
+      backgroundImage: {
+        "food-background": "url('/stub/stub-food.png')",
+      },
       colors: {
         primary: "#3f7953",
         secondary: "#6EC6AD",
