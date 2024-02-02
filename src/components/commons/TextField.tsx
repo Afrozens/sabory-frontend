@@ -56,7 +56,7 @@ const CustomInput = ({
           autoComplete="current-password"
           className={`${
             id === "password" || id === "confirmPassword" ? "pr-10" : "pr-4"
-          } custom-input ${classAditional || ""}`}
+          } custom-input placeholder:opacity-80 ${classAditional || ""}`}
           {...(register && register(name as string, rules))}
           {...props}
           name={name}
@@ -65,7 +65,7 @@ const CustomInput = ({
         {id === "password" || id === "confirmPassword" ? (
           <button
             type="button"
-            className="absolute top-2 hover:scale-110 transition-all active:scale-95  right-3 text-lg"
+            className="absolute top-1/2 -translate-y-1/2 hover:scale-110 transition-all active:scale-95  right-3 text-lg"
             onClick={handlePassword}
           >
             {currentType === type ? <FaRegEye /> : <FaRegEyeSlash />}

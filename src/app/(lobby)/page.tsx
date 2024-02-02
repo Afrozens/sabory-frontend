@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import TextField from "@/components/commons/TextField";
+// components
 import CustomButton from "@/components/commons/CustomButton";
-import { MdOutlineMail } from "react-icons/md";
+import SubscribeForm from "@/components/forms/SubscribeForm";
 
 interface ListWhat {
   svg: string;
@@ -46,19 +46,7 @@ function Home() {
             Compra directamente del vendedor y ahorra dinero mientras reduces el
             desperdicio de alimentos.
           </p>
-          <div className="w-full relative flex gap-4">
-            <TextField
-              label=""
-              placeholder="Escribe tu correo elétronico"
-              classAditional="pl-8 placeholder:opacity-80"
-              type="text"
-              id="email"
-            />
-            <CustomButton withNext classAditional="bg-secondary text-white ">
-              Subscribirse
-            </CustomButton>
-            <MdOutlineMail className="absolute top-1/3 left-2 text-xl opacity-80 text-gray-500" />
-          </div>
+          <SubscribeForm />
         </div>
         {/* main image of landing */}
         <div className="w-80 mx-auto h-80 flex justify-center items-center bg-primary rounded-full z-10 relative lg:w-96 lg:h-96 md:mx-0">

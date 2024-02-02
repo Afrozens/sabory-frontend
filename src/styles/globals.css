@@ -1,4 +1,5 @@
 @import "./transitions.css";
+@import "./input.css";
 
 @tailwind base;
 @layer base {
