@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+
 //components
 import TextField from "@/components/commons/TextField";
 import CustomButton from "@/components/commons/CustomButton";
 import CustomCheckbox from "../commons/CustomCheckbox";
+import CustomHr from "../commons/CustomHr";
+import ButtonSocial from "../general/auth/ButtonSocial";
 
 const SignInForm = () => {
   return (
@@ -14,25 +15,8 @@ const SignInForm = () => {
       <h4 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
         Inicia sesión{" "}
       </h4>
-      <CustomButton classAditional="bg-[#1877F2] w-60 hover:opacity-90 h-10">
-        <span className="text-white items-center flex gap-2">
-          <FaFacebook className="text-xl" />
-          Continua con Facebook
-        </span>
-      </CustomButton>
-      <CustomButton classAditional="bg-white w-60 hover:opacity-90 h-10">
-        <span className="text-gray-500 justify-between items-center flex gap-2 mr-4">
-          <FcGoogle className="text-xl" />
-          Continua con Google
-        </span>
-      </CustomButton>
-      <div className="inline-flex items-center justify-center w-full">
-        <hr className="w-full h-1 my-2 bg-gray-300 border-0 rounded " />
-        <div className="absolute flex flex-col justify-center items-center text-xs font-semibold text-gray-400 px-4 -translate-x-1/2 bg-quaternary left-1/2">
-          <span>O</span>
-          <span>correo/contraseña</span>
-        </div>
-      </div>
+      <ButtonSocial />
+      <CustomHr title="correo/contraseña" />
       <TextField
         label="Correo elétronico"
         placeholder="example@sabory.es"
@@ -63,7 +47,7 @@ const SignInForm = () => {
         Iniciar sesión
       </CustomButton>
       <small className="text-gray-500">
-        ¿Ya tienes una cuenta? <b className="text-secondary">Registrate</b>
+        ¿Aún no tienes una cuenta? <b className="text-secondary">Registrate</b>
       </small>
     </form>
   );

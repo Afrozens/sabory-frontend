@@ -4,6 +4,7 @@ import { Rubik } from "next/font/google";
 import { siteConfig } from "@/config/side";
 // styles
 import "@/styles/globals.css";
+import "react-phone-input-2/lib/style.css";
 
 const rubik = Rubik({ subsets: ["latin"] });
 

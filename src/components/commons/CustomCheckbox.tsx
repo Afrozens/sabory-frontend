@@ -2,7 +2,7 @@ import React from "react";
 
 const CustomCheckbox = () => {
   return (
-    <div className="container">
+    <div className="container w-min">
       <input className="hidden" id="cbx" type="checkbox" />
       <label className="check" htmlFor="cbx">
         <svg viewBox="0 0 18 18" height="18px" width="18px">

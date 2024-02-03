@@ -16,6 +16,10 @@
   .custom-input {
     @apply border-[#d3d1d1] disabled:cursor-no-drop disabled:bg-gray-200 disabled:opacity-80 w-full placeholder:text-[#64676f] outline-none rounded-[9px] transition-all border resize-none py-2  bg-[#F9F9F9] focus:ring-secondary pl-4 focus:ring-2 h-12 focus:outline-none focus:shadow-sm focus:bg-transparent;
   }
+
+  .base-form {
+    @apply w-full mt-4 gap-4 px-7 items-center justify-center flex flex-col;
+  }
 }
 @tailwind utilities;
 @layer utilities {

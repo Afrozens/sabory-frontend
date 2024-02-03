@@ -65,3 +65,33 @@
   transition: all 0.2s linear;
   transition-delay: 0.15s;
 }
+
+/* phone number */
+.react-tel-input {
+  min-height: 3rem !important;
+  border-width: 0px !important;
+  background-color: rgb(249 249 249) !important;
+  border-radius: 9px !important;
+}
+
+.form-control {
+  border-color: #d3d1d1 !important;
+  min-height: 3rem !important;
+  border-width: 1px !important;
+  background-color: rgb(249 249 249) !important;
+  border-radius: 9px !important;
+  width: 100% !important;
+}
+
+.flag-dropdown {
+  border-top-left-radius: 9px !important;
+  border-bottom-left-radius: 9px !important;
+  border-color: #d3d1d1 !important;
+  border-width: 1px !important;
+}
+
+.selected-flag:hover {
+  border-top-left-radius: 9px !important;
+  border-bottom-left-radius: 9px !important;
+  border-color: #d3d1d1 !important;
+}
