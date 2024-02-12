@@ -16,7 +16,7 @@ const SignInForm = () => {
         Inicia sesión{" "}
       </h4>
       <ButtonSocial />
-      <CustomHr title="correo/contraseña" />
+      <CustomHr withOr title="correo/contraseña" />
       <TextField
         label="Correo elétronico"
         placeholder="example@sabory.es"

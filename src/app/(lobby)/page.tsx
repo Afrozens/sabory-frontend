@@ -3,6 +3,8 @@ import React from "react";
 // components
 import CustomButton from "@/components/commons/CustomButton";
 import SubscribeForm from "@/components/forms/SubscribeForm";
+import CustomHr from "@/components/commons/CustomHr";
+import LandingTemplate from "@/template/LandingTemplate";
 
 interface ListWhat {
   svg: string;
@@ -28,13 +30,13 @@ function Home() {
   return (
     <article className="w-full min-h-screen relative ">
       {/* main section */}
-      <section className="w-full my-8 md:flex lg:px-16 lg:justify-between lg:my-12 px-5">
+      <section className="w-full my-8 md:flex lg:px-16 lg:justify-between lg:my-12 px-5 relative">
         <Image
           width={110}
           height={110}
           alt="effect of many points"
           src="/effect/effect-many-point.svg"
-          className="absolute top-1/3 -right-5 z-0 lg:top-20"
+          className="absolute top-3/4 md:top-1/2 -translate-y-1/2 -right-5 z-0 h-36 w-36"
         />
         {/* main title of landing */}
         <div className="animate-fade animate-ease-out flex flex-col md:max-w-xl mb-4 lg:mb-0">
@@ -53,26 +55,32 @@ function Home() {
           <Image
             width={150}
             height={50}
-            alt="effect of many points"
+            alt="image of ad of food"
             src="/svg/landing-svg/landing-alert-two.svg"
-            className="object-cover bg-cover z-10 absolute top-5 -left-10 lg:w-[200px] lg:-left-20"
+            className="object-cover bg-cover z-10 absolute top-5 -left-6 lg:w-[200px] lg:-left-20"
           />
           <Image
             width={370}
             height={400}
-            alt="effect of many points"
+            alt="image of human eat food"
             src="/svg/landing-svg/landing-main.svg"
             className="absolute object-cover bg-cover z-10 -bottom-1"
           />
           <Image
             width={150}
             height={50}
-            alt="effect of many points"
+            alt="image of toast success"
             src="/svg/landing-svg/landing-alert.svg"
             className="object-cover bg-cover z-10 absolute bottom-5 -right-4"
           />
         </div>
       </section>
+      <CustomHr classAditional="bg-secondary my-6 w-12" />
+      {/* section of carousel */}
+      <section className="w-full flex flex-col lg:px-16">
+        <LandingTemplate />
+      </section>
+      <CustomHr classAditional="bg-secondary my-6 w-12" />
       {/* section of what we do */}
       <section className="w-full flex flex-col mb-4 px-5">
         <h3 className=" animate-fade animate-ease-out text-xl text-center text-tertiary">
@@ -109,6 +117,7 @@ function Home() {
           ))}
         </div>
       </section>
+      <CustomHr classAditional="bg-secondary my-6 w-12" />
       {/* section of register */}
       <section className="w-full h-48 justify-center items-center flex flex-col bg-food-background bg-primary mt-8 p-5 lg:h-56">
         <h6 className="font-semibold text-xl text-center text-quaternary lg:text-4xl max-w-lg">

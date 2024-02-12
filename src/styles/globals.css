@@ -1,5 +1,6 @@
 @import "./transitions.css";
 @import "./input.css";
+@import "./carousel.css";
 
 @tailwind base;
 @layer base {

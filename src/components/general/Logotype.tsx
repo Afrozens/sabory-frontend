@@ -10,7 +10,7 @@ const Logotype = () => {
         src="/svg/sabory.svg"
         alt="sabory app main logotype"
       />
-      <span className="text-xl font-semibold text-primary -ml-2 md:text-2xl">
+      <span className="hidden sm:block text-xl font-semibold text-primary -ml-2 md:text-2xl">
         Sabory
       </span>
     </div>

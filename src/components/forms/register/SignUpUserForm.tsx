@@ -21,7 +21,7 @@ const SignUpUserForm = () => {
         beneficios que ofrecemos.
       </p>
       <ButtonSocial />
-      <CustomHr title="" />
+      <CustomHr withOr />
       <div className="flex justify-between items-center gap-2 w-full">
         <TextField label="Nombre" placeholder="Sabory" type="text" id="name" />
         <TextField

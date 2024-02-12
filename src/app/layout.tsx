@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/side";
 // styles
 import "@/styles/globals.css";
 import "react-phone-input-2/lib/style.css";
+import "react-multi-carousel/lib/styles.css";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
