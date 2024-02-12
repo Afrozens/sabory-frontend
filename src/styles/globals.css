@@ -21,6 +21,10 @@
   .base-form {
     @apply w-full mt-4 gap-4 px-7 items-center justify-center flex flex-col;
   }
+
+  .link-breadcrumb {
+    @apply flex items-center gap-1 justify-center text-sm font-medium text-gray-700 capitalize hover:text-secondary hover:opacity-80 transition-all;
+  }
 }
 @tailwind utilities;
 @layer utilities {
