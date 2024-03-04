@@ -8,6 +8,7 @@ export const foodDataPrimary: FoodPrimary[] = [
     imageUrl: "/stub/carousel-lobby/food1.jpg",
     price: 1.2,
     offer: 35,
+    point: 4.9,
   },
   {
     id: uuidv4(),
@@ -15,6 +16,7 @@ export const foodDataPrimary: FoodPrimary[] = [
     imageUrl: "/stub/carousel-lobby/food2.jpg",
     price: 2.5,
     offer: 45,
+    point: 4.2,
   },
   {
     id: uuidv4(),
@@ -22,6 +24,7 @@ export const foodDataPrimary: FoodPrimary[] = [
     imageUrl: "/stub/carousel-lobby/food3.jpg",
     price: 0.75,
     offer: 15,
+    point: 5,
   },
   {
     id: uuidv4(),
@@ -29,6 +32,7 @@ export const foodDataPrimary: FoodPrimary[] = [
     imageUrl: "/stub/carousel-lobby/food4.jpg",
     price: 6,
     offer: 12,
+    point: 4.5,
   },
   {
     id: uuidv4(),
@@ -36,5 +40,6 @@ export const foodDataPrimary: FoodPrimary[] = [
     imageUrl: "/stub/carousel-lobby/food5.jpg",
     price: 3,
     offer: 21,
+    point: 4.5,
   },
 ];

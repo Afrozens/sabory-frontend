@@ -9,7 +9,6 @@ const CustomBreadCrumbs = () => {
   const pathname = usePathname();
   const getPathElements = (pathname: string) => {
     const pathElements = pathname.split("/");
-    // Eliminar el primer elemento vacío en caso de que el pathname comience con '/'
     if (pathElements[0] === "") {
       pathElements.shift();
     }
@@ -27,14 +26,14 @@ const CustomBreadCrumbs = () => {
           </Link>
         </li>
         {pathElements.map((element, index) => (
-          <>
-            <span>/</span>
+          <div className="w-full" key={index}>
+            <span>/ </span>
             <li key={index + 1} className="inline-flex items-center">
               <Link href={`/${element}`} className="link-breadcrumb">
                 {element}
               </Link>
             </li>
-          </>
+          </div>
         ))}
       </ol>
     </nav>

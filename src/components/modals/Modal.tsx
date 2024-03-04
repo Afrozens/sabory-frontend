@@ -34,10 +34,6 @@ const Modal = ({
     "2xl": "md:max-w-2xl",
   }[maxWidth];
 
-  //   fixed inset-0 flex overflow-y-auto px-4 py-6 sm:px-0 items-center z-50 transform transition-all
-
-  // mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto
-
   return (
     <>
       {show ? (

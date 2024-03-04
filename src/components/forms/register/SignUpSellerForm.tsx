@@ -7,9 +7,12 @@ import CustomButton from "@/components/commons/CustomButton";
 import CustomCheckbox from "@/components/commons/CustomCheckbox";
 import CustomInputPhone from "@/components/commons/CustomInputPhone";
 import Hcaptcha from "@/components/commons/Hcaptcha";
+// contexts
+import { useStepper } from "@/contexts/auth/stepperContext";
 
 const SignUpSellerForm = () => {
-  const [token, setToken] = useState("");
+  const { setStep } = useStepper();
+  // const [token, setToken] = useState("");
   return (
     <form className="base-form md:px-20">
       <h2 className="text-2xl text-center whitespace-pre font-semibold leading-none tracking-tight text-gray-900 md:text-4xl">
@@ -66,9 +69,10 @@ const SignUpSellerForm = () => {
           Acepto los terminos y condiciones
         </span>
       </label>
-      <Hcaptcha setToken={setToken} token={token} />
+      {/* <Hcaptcha setToken={setToken} token={token} /> */}
       <div className="flex justify-between items-center gap-4 mt-2">
         <CustomButton
+          onClick={() => setStep("start")}
           type="button"
           classAditional="bg-gray-400 text-white w-40"
         >

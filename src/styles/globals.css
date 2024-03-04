@@ -23,7 +23,7 @@
   }
 
   .link-breadcrumb {
-    @apply flex items-center gap-1 justify-center text-sm font-medium text-gray-700 capitalize hover:text-secondary hover:opacity-80 transition-all;
+    @apply flex items-center gap-1 justify-center  text-gray-700 capitalize hover:text-secondary hover:opacity-80 transition-all;
   }
 }
 @tailwind utilities;

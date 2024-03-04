@@ -4,4 +4,5 @@ export interface FoodPrimary {
   imageUrl: string;
   price: number;
   offer: number;
+  point: number;
 }

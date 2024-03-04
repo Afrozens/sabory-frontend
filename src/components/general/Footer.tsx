@@ -75,14 +75,14 @@ const Footer = () => {
             </a>
             . Todo los derechos reservados.
           </span>
-          <div className="flex items-center -ml-5 lg:-ml-0">
+          <div className="flex items-center -ml-5 lg:-ml-0 gap-3">
             <Image
-              width={72}
-              height={72}
-              src="/svg/sabory.svg"
+              width={45}
+              height={45}
+              src="/icons/sabory-white.png"
               alt="sabory app main logotype"
             />
-            <span className="text-xl font-semibold text-primary -ml-2 md:text-2xl">
+            <span className="text-xl font-semibold text-white -ml-2 -mb-2 md:text-2xl">
               Sabory
             </span>
           </div>

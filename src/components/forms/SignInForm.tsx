@@ -8,12 +8,13 @@ import CustomButton from "@/components/commons/CustomButton";
 import CustomCheckbox from "../commons/CustomCheckbox";
 import CustomHr from "../commons/CustomHr";
 import ButtonSocial from "../general/auth/ButtonSocial";
+import Link from "next/link";
 
 const SignInForm = () => {
   return (
     <form className="w-full flex flex-col gap-4 justify-center items-center">
       <h4 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
-        Inicia sesión{" "}
+        Iniciar Sesión Para Continuar
       </h4>
       <ButtonSocial />
       <CustomHr withOr title="correo/contraseña" />
@@ -32,9 +33,9 @@ const SignInForm = () => {
       <div className="w-full flex justify-between items-center">
         <label htmlFor="cbx" className="flex gap-2 cursor-pointer">
           <CustomCheckbox />
-          <span className="text-xs text-gray-500">Recordar</span>
+          <span className="text-xs text-gray-700">Recordar</span>
         </label>
-        <small className="opacity-80 font-light self-end text-xs">
+        <small className="opacity-80 font-light self-end text-xs text-gray-700">
           ¿Haz olvidado tu contraseña?
         </small>
       </div>
@@ -47,7 +48,10 @@ const SignInForm = () => {
         Iniciar sesión
       </CustomButton>
       <small className="text-gray-500">
-        ¿Aún no tienes una cuenta? <b className="text-secondary">Registrate</b>
+        ¿Aún no tienes una cuenta?{" "}
+        <b className="text-secondary hover:opacity-80 transition-all">
+          <Link href="/registrarse">Registrate</Link>
+        </b>
       </small>
     </form>
   );

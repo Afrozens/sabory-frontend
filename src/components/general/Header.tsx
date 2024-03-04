@@ -9,8 +9,8 @@ import Modal from "../modals/Modal";
 import SignInForm from "../forms/SignInForm";
 import Logotype from "./Logotype";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Header = ({ isOpenLogin = false }: { isOpenLogin: boolean }) => {
+  const [isOpen, setIsOpen] = useState(isOpenLogin);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -44,7 +44,7 @@ const Header = () => {
         show={isOpen}
         onClose={handleClose}
         isLoading={false}
-        maxWidth="sm"
+        maxWidth="md"
         classAditional="h-max top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:top-1/3"
       >
         <SignInForm />

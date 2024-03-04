@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
   },
   icons: {
-    icon: "/svg/sabory.svg",
+    icon: "/icons/sabory.png",
   },
 };
 
